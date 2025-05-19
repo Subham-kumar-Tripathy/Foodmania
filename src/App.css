@@ -1,0 +1,52 @@
+.App {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+ 
+  Header, Footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+  @media (max-width: 768px) {  
+    .App {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {  
+    .App {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      padding: 15px;
+    }
+  }
+  
+  @media (min-width: 1025px) { 
+    .App {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .main-content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+  
